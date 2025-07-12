@@ -1,3 +1,7 @@
+## 0.0.6 - 2025-07-12
+- Fixed example project name to HtmlRenderer_example
+- Final adjustments for package compliance and documentation
+
 ## 0.0.5 - 2025-07-12
 - Code formatted with dart format for pub.dev compliance
 - Minor fixes and adjustments for static analysis
