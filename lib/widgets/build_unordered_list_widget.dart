@@ -4,8 +4,13 @@ import '../utils/parsers/html_list_parser.dart';
 import '../utils/strings/html_parser_strings.dart';
 
 class BuildUnorderedListWidget extends StatelessWidget {
+  /// The HTML block containing the unordered list.
   final String block;
+
+  /// The text style for list items.
   final TextStyle? style;
+
+  /// The text alignment for list items.
   final TextAlign? textAlign;
 
   /// A widget that renders an HTML unordered list (<ul>) with customizable styling.
@@ -22,7 +27,8 @@ class BuildUnorderedListWidget extends StatelessWidget {
     final List<String> items = HtmlListParser.parseList(block);
 
     return Container(
-      margin: const EdgeInsets.only(bottom: HtmlParserStrings.defaultListSpacing),
+      margin:
+          const EdgeInsets.only(bottom: HtmlParserStrings.defaultListSpacing),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: items.asMap().entries.map((entry) {
@@ -31,7 +37,9 @@ class BuildUnorderedListWidget extends StatelessWidget {
 
           return Container(
             margin: EdgeInsets.only(
-              bottom: index == items.length - 1 ? 0 : HtmlParserStrings.defaultListItemSpacing,
+              bottom: index == items.length - 1
+                  ? 0
+                  : HtmlParserStrings.defaultListItemSpacing,
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,

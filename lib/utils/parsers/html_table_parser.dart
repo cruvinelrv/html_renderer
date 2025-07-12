@@ -17,24 +17,28 @@ class HtmlTableParser {
 
     for (final rowMatch in rowRegExp.allMatches(tableContent)) {
       final row = rowMatch.group(0)!;
-      final headers =
-          headerCellRegExp
-              .allMatches(row)
-              .map(
-                (cellMatch) =>
-                    HtmlParserRegex.thContent.firstMatch(cellMatch.group(0)!)?.group(1)?.trim() ??
-                    HtmlParserStrings.emptyString,
-              )
-              .toList();
-      final data =
-          dataCellRegExp
-              .allMatches(row)
-              .map(
-                (cellMatch) =>
-                    HtmlParserRegex.tdContent.firstMatch(cellMatch.group(0)!)?.group(1)?.trim() ??
-                    HtmlParserStrings.emptyString,
-              )
-              .toList();
+      final headers = headerCellRegExp
+          .allMatches(row)
+          .map(
+            (cellMatch) =>
+                HtmlParserRegex.thContent
+                    .firstMatch(cellMatch.group(0)!)
+                    ?.group(1)
+                    ?.trim() ??
+                HtmlParserStrings.emptyString,
+          )
+          .toList();
+      final data = dataCellRegExp
+          .allMatches(row)
+          .map(
+            (cellMatch) =>
+                HtmlParserRegex.tdContent
+                    .firstMatch(cellMatch.group(0)!)
+                    ?.group(1)
+                    ?.trim() ??
+                HtmlParserStrings.emptyString,
+          )
+          .toList();
       rows.add(headers.isNotEmpty ? headers : data);
     }
     return rows;

@@ -7,7 +7,12 @@ class HtmlRenderer extends StatelessWidget {
   final TextAlign? textAlign;
   final EdgeInsets? padding;
 
-  const HtmlRenderer({super.key, required this.html, this.style, this.textAlign, this.padding});
+  const HtmlRenderer(
+      {super.key,
+      required this.html,
+      this.style,
+      this.textAlign,
+      this.padding});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +20,8 @@ class HtmlRenderer extends StatelessWidget {
       padding: padding ?? EdgeInsets.zero,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: HtmlParserImpl().parseHtml(html, style: style, textAlign: textAlign),
+        children: HtmlParserImpl()
+            .parseHtml(html, style: style, textAlign: textAlign),
       ),
     );
   }

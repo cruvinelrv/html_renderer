@@ -4,6 +4,7 @@ import '../utils/strings/html_parser_strings.dart';
 import '../utils/html_color_utils.dart';
 
 class HtmlErrorWidget extends StatelessWidget {
+  /// The HTML block that caused the error.
   final String block;
 
   /// A widget that displays an error message when an HTML block cannot be processed.

@@ -18,12 +18,20 @@ class HtmlTableParser {
       final headers = headerCellRegExp
           .allMatches(row)
           .map((cellMatch) =>
-              HtmlParserRegex.thContent.firstMatch(cellMatch.group(0)!)?.group(1)?.trim() ?? '')
+              HtmlParserRegex.thContent
+                  .firstMatch(cellMatch.group(0)!)
+                  ?.group(1)
+                  ?.trim() ??
+              '')
           .toList();
       final data = dataCellRegExp
           .allMatches(row)
           .map((cellMatch) =>
-              HtmlParserRegex.tdContent.firstMatch(cellMatch.group(0)!)?.group(1)?.trim() ?? '')
+              HtmlParserRegex.tdContent
+                  .firstMatch(cellMatch.group(0)!)
+                  ?.group(1)
+                  ?.trim() ??
+              '')
           .toList();
       rows.add(headers.isNotEmpty ? headers : data);
     }
