@@ -16,7 +16,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  html_renderer: ^0.0.1
+  html_renderer: ^0.0.3
 ```
 
 Run:
