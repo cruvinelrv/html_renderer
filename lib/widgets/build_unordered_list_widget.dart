@@ -8,6 +8,7 @@ class BuildUnorderedListWidget extends StatelessWidget {
   final TextStyle? style;
   final TextAlign? textAlign;
 
+  /// A widget that renders an HTML unordered list (<ul>) with customizable styling.
   const BuildUnorderedListWidget({
     super.key,
     required this.block,

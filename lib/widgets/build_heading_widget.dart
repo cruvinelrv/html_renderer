@@ -7,6 +7,7 @@ class BuildHeadingWidget extends StatelessWidget {
   final String content;
   final TextAlign? textAlign;
 
+  /// A widget that renders an HTML heading (h1-h6) with customizable level and content.
   const BuildHeadingWidget({super.key, required this.level, required this.content, this.textAlign});
 
   @override

@@ -8,6 +8,7 @@ class BuildOrderedListWidget extends StatelessWidget {
   final TextStyle? style;
   final TextAlign? textAlign;
 
+  /// A widget that renders an HTML ordered list (<ol>) with customizable styling.
   const BuildOrderedListWidget({super.key, required this.block, this.style, this.textAlign});
 
   @override

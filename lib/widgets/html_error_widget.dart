@@ -6,6 +6,7 @@ import '../utils/html_color_utils.dart';
 class HtmlErrorWidget extends StatelessWidget {
   final String block;
 
+  /// A widget that displays an error message when an HTML block cannot be processed.
   const HtmlErrorWidget({super.key, required this.block});
 
   @override

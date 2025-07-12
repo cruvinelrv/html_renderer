@@ -7,6 +7,7 @@ class BuildParagraphWidget extends StatelessWidget {
   final TextStyle? style;
   final TextAlign? textAlign;
 
+  /// A widget that renders an HTML paragraph (<p>) with customizable styling.
   const BuildParagraphWidget({super.key, required this.content, this.style, this.textAlign});
 
   @override
