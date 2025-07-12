@@ -8,12 +8,12 @@ import 'package:html_renderer/widgets/html_error_widget.dart';
 void main() {
   group('HtmlRender widget', () {
     testWidgets('renders paragraph from HTML', (tester) async {
-      await tester.pumpWidget(MaterialApp(home: HtmlRender(html: '<p>Hello World</p>')));
+      await tester.pumpWidget(MaterialApp(home: HtmlRenderer(html: '<p>Hello World</p>')));
       expect(find.text('Hello World'), findsOneWidget);
     });
 
     testWidgets('renders heading from HTML', (tester) async {
-      await tester.pumpWidget(MaterialApp(home: HtmlRender(html: '<h1>Title</h1>')));
+      await tester.pumpWidget(MaterialApp(home: HtmlRenderer(html: '<h1>Title</h1>')));
       expect(find.text('Title'), findsOneWidget);
     });
 

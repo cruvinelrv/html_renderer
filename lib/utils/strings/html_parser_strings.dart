@@ -15,13 +15,13 @@ class HtmlParserStrings {
   static const String tableOpenTag = '<table';
   static const String tableCloseTag = '</table>';
 
-  // Prefixos abertura de tags
+  // prefix open tags
   static const String headingPrefix = '<h';
   static const String tagClose = '>';
   static const String tagOpenPrefix = '<';
   static const String spanOpenTag = '<span';
 
-  // Espaçamentos padrão
+  // default spacing values
   static const double defaultParagraphSpacing = 12.0;
   static const double defaultListSpacing = 12.0;
   static const double defaultListItemSpacing = 6.0;
@@ -31,12 +31,12 @@ class HtmlParserStrings {
   static const double defaultBulletSpacing = 8.0;
   static const double defaultBulletOffset = 2.0;
 
-  // Caracteres especiais
+  // special characters
   static const String bulletChar = '•';
   static const String spaceChar = ' ';
   static const String emptyString = '';
 
-  // Números de headings
+  // heading levels
   static const int minHeadingLevel = 1;
   static const int maxHeadingLevel = 6;
   static const int defaultHeadingLevel = 3;
