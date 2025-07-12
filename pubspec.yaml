@@ -1,0 +1,23 @@
+name: html_renderer
+description: "A lightweight Flutter package for rendering HTML content with customizable styling and widget support."
+version: 0.0.1
+homepage: https://htmlrenderer.inatos.com.br	
+repository: https://github.com/cruvinelrv/html_renderer
+documentation: https://htmlrenderer.inatos.com.br/docs
+license: MIT
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  
+flutter:
+  uses-material-design: true
