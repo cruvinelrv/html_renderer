@@ -1,3 +1,7 @@
+## 0.0.5 - 2025-07-12
+- Code formatted with dart format for pub.dev compliance
+- Minor fixes and adjustments for static analysis
+
 ## 0.0.4 - 2025-07-11
 - Added documentation comments to public API (widgets and main classes)
 - Improved pub.dev score for documentation
