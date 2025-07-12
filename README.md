@@ -30,7 +30,7 @@ dart pub get
 ```dart
 import 'package:html_renderer/html_renderer.dart';
 
-HtmlRender(
+HtmlRenderer(
   html: "<h1>Title</h1><p>Paragraph content</p>",
 )
 ```
