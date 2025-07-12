@@ -1,39 +1,44 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+# html_renderer
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A lightweight Flutter package for rendering HTML content with customizable styling and widget support.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Renders simple HTML into Flutter widgets
+- Supports paragraphs, headings, ordered and unordered lists, tables, and colored spans
+- Allows style customization via parameters
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  html_renderer: ^0.0.1
+```
+
+Run:
+
+```sh
+dart pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:html_renderer/html_renderer.dart';
+
+HtmlRender(
+  html: "<h1>Title</h1><p>Paragraph content</p>",
+)
 ```
 
-## Additional information
+## Example
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+See full examples in the `example/` folder or in the online documentation.
+
+## License
+
+MIT © 2025 Vinicius Cruvinel
