@@ -1,3 +1,6 @@
+## 0.0.7 - 2025-07-12
+- Ajustments in example use for README.md
+
 ## 0.0.6 - 2025-07-12
 - Fixed example project name to HtmlRenderer_example
 - Final adjustments for package compliance and documentation

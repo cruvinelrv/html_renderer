@@ -1,6 +1,6 @@
 name: html_renderer
 description: "A lightweight Flutter package for rendering HTML content with customizable styling and widget support."
-version: 0.0.6
+version: 0.0.7
 homepage: https://htmlrenderer.inatos.com.br	
 repository: https://github.com/cruvinelrv/html_renderer
 documentation: https://htmlrenderer.inatos.com.br/docs
