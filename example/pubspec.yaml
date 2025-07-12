@@ -1,0 +1,21 @@
+name: html_renderer_example
+description: Example app for html_renderer package
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=1.17.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  html_renderer:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
